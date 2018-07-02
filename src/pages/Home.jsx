@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import Jumbotron from '../components/Jumbotron.jsx';
 import CarouselPage from '../components/CarouselPage.jsx';
+import FadeExample from '../components/FadeExample.jsx';
 
 
 class Home extends Component {
@@ -34,6 +35,9 @@ class Home extends Component {
             <p>
               These are some of the places I took photos of. Not really though.
             </p>
+          </div>
+          <div className="container">
+            <FadeExample />
           </div>
           <div className="footerContainer">
             <Footer />
