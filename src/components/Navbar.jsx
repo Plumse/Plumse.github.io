@@ -32,18 +32,18 @@ class CustomNavbar extends Component {
     return (
       <div>
         <Navbar color="white" light expand="md">
-          <NavbarBrand href="/" id="navbartext">Plamen's website</NavbarBrand>
+          <NavbarBrand href={process.env.PUBLIC_URL + '/'} id="navbartext">Plamen Mateev</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink href={process.env.PUBLIC_URL + '/'}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/About">About</NavLink>
+                <NavLink href={process.env.PUBLIC_URL + '/About'}>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Contact">Contact</NavLink>
+                <NavLink href={process.env.PUBLIC_URL + '/Contact'}>Contact</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

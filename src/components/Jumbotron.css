@@ -1,7 +1,24 @@
-.jumbotron {
-  background-image: url(../images/bokeh-building-city-17668.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: white;
+
+
+
+#jumboHeading {
+   font-size: 50px !important;
+   margin-right: 10vmin;
+   font-weight: 500;
+   }
+#jumboParagraph {
+   font-size: 36px !important;
+   }
+
+@media (max-width: 767px) {
+   #jumboHeading {
+      font-size: 20px !important;
+      margin-bottom: -20px;
+      margin-left: 0px;
+      }
+   #jumboParagraph {
+      font-size: 16px !important;
+      margin-bottom: -12px;
+      margin-left: 0px;
+      }
 }

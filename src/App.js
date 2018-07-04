@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 
 
@@ -10,15 +10,15 @@ import Contact from './pages/Contact.jsx';
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
-        </div>
-      </Router>
+
+        <Switch>
+          <Route exact path={'/'} component={Home}/>
+          <Route path={'/About'} component={About}/>
+          <Route path={'/Contact'} component={Contact}/>
+        </Switch>
+
     );
   }
 }
 
-export default App;
+export default App

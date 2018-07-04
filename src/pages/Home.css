@@ -4,9 +4,201 @@ p {
     font-size: 20px;
 }
 
+#universeumIconImage {
+  margin-top: 25px;
+}
+
+#chalmersIconImage {
+  margin-top: 25px;
+}
+
+.my-2 {
+  border-color: white;
+}
+
+#companyImages{
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+#topJumboContainer {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#bottomJumboContainer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#codeJumboContainer {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+
 .footerContainer {
   position: absolute;
   left: 0;
   width: 100%;
   height: 60px;
+  margin-top: 80px;
+}
+
+#Skillsets {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#SkillsetsText {
+  margin-bottom: 30px;
+}
+
+#topJumbo {
+  background-image: url(../images/Top2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#bottomJumbo {
+  background-image: url(../images/Bottom2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#codeJumbo {
+  background-image: url(../images/DevCoop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+#topjumboBigH {
+  font-size: 80px !important;
+  margin-right: 10vmin;
+  font-weight: 500;
+}
+#topJumboH1 {
+   font-size: 50px !important;
+   margin-right: 10vmin;
+   font-weight: 500;
+   }
+#topJumboP1 {
+   font-size: 36px !important;
+   }
+#topJumboH2 {
+  font-size: 50px !important;
+  font-weight: 500;
+  }
+#topJumboP2 {
+  font-size: 36px !important;
+  }
+
+#codeJumboH1 {
+  display: block;
+  font-weight: 500;
+  font-size: 50px;
+  color: black;
+   }
+#codeJumboP1 {
+   font-size: 36px !important;
+   }
+
+
+@media (max-width: 767px) {
+
+   #topjumboBigH{
+     font-size: 30px !important;
+     margin-left: 0px;
+   }
+
+   #huaweiIconImage {
+     height: 100% !important;;
+     width: 100% !important;;
+     padding-bottom: 50px;
+   }
+
+   #universeumIconImage {
+     height: 85% !important;;
+     width: 100% !important;;
+     padding-bottom: 50px;
+   }
+
+   #chalmersIconImage {
+     height: 85% !important;
+     width: 100% !important;;
+     padding-bottom: 50px;
+   }
+
+   #topJumboH1 {
+      font-size: 20px !important;
+      margin-bottom: -20px;
+      margin-left: 0px;
+      }
+
+   #topJumboP1 {
+      font-size: 16px !important;
+      margin-bottom: -12px;
+      margin-left: 0px;
+      }
+
+  #codeJumboH1 {
+     font-size: 20px !important;
+     margin-top: -110px;
+     margin-left: 0px;
+     }
+  #codeJumboP1 {
+     font-size: 12px !important;
+     margin-top: 8px;
+     margin-left: 0px;
+     }
+  #topJumboH2 {
+    font-size: 20px !important;
+    margin-left: 0px;
+    }
+   #topJumboP2 {
+      font-size: 16px !important;
+      margin-bottom: -12px;
+      margin-left: 0px;
+      }
+   .footerContainer {
+      font-size: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+
+   #topjumboBigH{
+     font-size: 30px !important;
+     margin-left: 0px;
+   }
+
+   #codeJumboH1 {
+      font-size: 30px ;
+      margin-top: -110px;
+      margin-left: 0px;
+      }
+
+   #huaweiIconImage {
+     height: 90%;
+     width: 100%;
+     padding-bottom: 50px;
+   }
+
+   #universeumIconImage {
+     height: 70%;
+     width: 100%;
+     padding-bottom: 50px;
+   }
+
+   #chalmersIconImage {
+     height: 55%;
+     width: 100%;
+     padding-bottom: 50px;
+   }
 }

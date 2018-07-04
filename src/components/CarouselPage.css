@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+   #carouselH3 {
+      font-size: 12px !important;
+      margin-bottom: -20px;
+      }
+   #carouselP {
+      font-size: 8px !important;
+      margin-bottom: -12px;
+      }
+}
+
+.z-depth-1 {
+  margin-top: 80px;
+}

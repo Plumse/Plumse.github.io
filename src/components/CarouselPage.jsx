@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import { Carousel, CarouselCaption, CarouselControl, CarouselInner, CarouselItem, CarouselIndicators, CarouselIndicator, View, Mask, Container } from 'mdbreact';
 
-import image from './../images/Roads.jpg'
+import { Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button } from 'reactstrap';
+
+import './CarouselPage.css'
+import portfolioWeatherGUI from './../PortfolioImages/WeatherGUI.jpg'
+import portfolioFBI from './../PortfolioImages/FBI Visualization.jpg'
+import portfolioHuawei from './../PortfolioImages/HuaweiVoiceUI.png'
+import portfolioVR from './../PortfolioImages/BiographyofaStreet.png'
+
 class CarouselPage extends Component {
   constructor(props) {
     super(props);
@@ -43,7 +51,7 @@ class CarouselPage extends Component {
     const { activeItem } = this.state;
     return(
       <Container>
-        <h4 className="mt-5 mb-2" align="center">Some great shots below!</h4>
+        <h4 className="mt-5 mb-2" align="center"></h4>
         <Carousel
           activeItem={this.state.activeItem}
           next={this.next}
@@ -51,42 +59,42 @@ class CarouselPage extends Component {
           <CarouselInner>
             <CarouselItem itemId="1">
               <View>
-                <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" width="800" height="600" />
+                <img className="d-block w-100" src={portfolioWeatherGUI} alt="First slide"/>
                 <Mask overlay="black-light"></Mask>
               </View>
               <CarouselCaption>
-                <h3 className="h3-responsive">Tibet</h3>
-                <p>Mountains</p>
+                <h3 id="carouselH3" className="h3-responsive">HomeHandler Desktop Application</h3>
+                <p id="carouselP">GUI Design</p>
               </CarouselCaption>
             </CarouselItem>
             <CarouselItem itemId="2">
               <View>
-                <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(99).jpg" alt="Second slide" width="800" height="600" />
-                <Mask overlay="black-strong"></Mask>
+                <img className="d-block w-100" src={portfolioFBI} alt="Second slide" />
+                <Mask overlay="black-light"></Mask>
               </View>
               <CarouselCaption>
-                <h3 className="h3-responsive">Sweden</h3>
-                <p>Winter</p>
+                <h3 id="carouselH3" className="h3-responsive">FBI Crime Data Visualization</h3>
+                <p id="carouselP">Frontend design</p>
               </CarouselCaption>
             </CarouselItem>
             <CarouselItem itemId="3">
               <View>
-                <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg" alt="Third slide" width="800" height="600" />
+                <img className="d-block w-100" src={portfolioHuawei} alt="Third slide"/>
                 <Mask overlay="black-slight"></Mask>
               </View>
               <CarouselCaption>
-                <h3 className="h3-responsive">Bulgaria</h3>
-                <p>Hilltop</p>
+                <h3 id="carouselH3" className="h3-responsive">Voice User Interface system for Huawei</h3>
+                <p id="carouselP">Interaction Design</p>
               </CarouselCaption>
             </CarouselItem>
             <CarouselItem itemId="4">
               <View>
-                <img className="d-block w-100" src={image} alt="Roads" width="800" height="600" />
-                <Mask overlay="black-light"></Mask>
+                <img className="d-block w-100" src={portfolioVR} alt="Roads"/>
+                <Mask overlay="black-strong"></Mask>
               </View>
               <CarouselCaption>
-                <h3 className="h3-responsive">USA</h3>
-                <p>Busy Roads</p>
+                <h3 id="carouselH3" className="h3-responsive">Virtual Reality Experience</h3>
+                <p id="carouselP">UX design</p>
               </CarouselCaption>
             </CarouselItem>
           </CarouselInner>
@@ -104,4 +112,4 @@ class CarouselPage extends Component {
   }
 }
 
-export default CarouselPage;
+export default CarouselPage
