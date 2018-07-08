@@ -51,7 +51,7 @@ class About extends Component {
         </Container>
         <div className="container">
           <div div class="row justify-content-center align-items-center">
-            <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1neh16PVtJ6VLqTum1e2GPJjrOKMsyiYwm0sVuGLjEFc/export?format=pdf&attachment=false" className="btn" role="button" id="resumeButton">View Resume</a>
+            <a href="https://drive.google.com/open?id=1uME5MUIyyJeQvvviS58cgsybJgFwGOIJ" className="btn" role="button" id="resumeButton">View Resume</a>
           </div>
         </div>
         <div className="aboutfooterContainer">

@@ -5,6 +5,7 @@
   "homepage": "https://plumse.github.io/Website/",
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "google-map-react": "^1.0.5",
     "mdbreact": "^4.5.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

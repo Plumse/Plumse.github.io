@@ -28,7 +28,9 @@ class CustomNavbar extends Component {
       isOpen: !this.state.isOpen
     });
   }
+
   render() {
+    
     return (
       <div>
         <Navbar color="white" light expand="md">

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Jumbotron, Media, Container, Row, Col } from 'reactstrap';
 
+
 import './Contact.css';
 
 import Navbar from '../components/Navbar.jsx';
@@ -12,12 +13,17 @@ import EmailIcon from './../Icons/empty-email.png';
 
 import Map from './../images/Map.jpg';
 
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
 class Contact extends Component {
+  static defaultProps = {
+    center: {
+      lat: 57.69,
+      lng: 11.97
+    },
+    zoom: 13
+  };
   render() {
-    var style = {
-      color: 'red',
-      fontSize: 35,
-    };
     return (
       <div>
         <Navbar />
@@ -41,7 +47,7 @@ class Contact extends Component {
           <Container id="linksContainer">
             <Row>
               <Col xs="4">
-              <a href="https://www.linkedin.com/in/plamen-mateev-a4b293125/">
+              <a href="https://www.linkedin.com/in/plamen-mateev">
               <i className="fa fa-linkedin" style={{fontSize:50 + 'px'}}></i>
               </a>
               <span id="linksMedia1">LinkedIn page</span>
@@ -71,7 +77,7 @@ class Contact extends Component {
                   <Col l="2">
                   </Col>
                   <Col l="9">
-                    <img id="currentlocationMap" className="img-responsive" src={Map} />
+                      <img id="currentlocationMap" className="img-responsive" src={Map} />
                   </Col>
                   <Col l="2">
                   </Col>
