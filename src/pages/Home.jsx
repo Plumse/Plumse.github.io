@@ -69,7 +69,7 @@ class Home extends Component {
                       <Media object src={toolsIcon} alt="Tools" id="toolsIconImage" />
                     </Media>
                     <Media body>
-                      <Media heading align="center">
+                      <Media heading align="center" id="designToolsText">
                         Design Tools
                       </Media>
                       <ul>
@@ -87,7 +87,7 @@ class Home extends Component {
                    </Media>
                    <Media body>
                      <Media heading align="center">
-                       Techniques
+                     Techniques
                      </Media>
                      <ul>
                       <li>Prototyping</li>
@@ -147,14 +147,14 @@ class Home extends Component {
           <div className="container" id="carouselPageContainer">
             <CarouselPage />
           </div>
-          <div className="container">
-            <p align="center">
+          <div className="container" id="portfolioButtonText">
+            <p align="center" id="portfolioText">
               These are just some of the projects that I've done. Click the button below to explore my portfolio in detail!
             </p>
           </div>
           <div className="container">
             <div div class="row justify-content-center align-items-center">
-              <a href="https://www.behance.net/plamenmtv4cf1" className="btn btn-info" role="button">Open Portfolio</a>
+              <a href="https://www.behance.net/plamenmtv4cf1" className="btn" role="button" id="portfolioButton">View Portfolio</a>
             </div>
           </div>
           <div className="footerContainer">

@@ -1,7 +1,83 @@
 .aboutfooterContainer {
   position: absolute;
-  padding-top: 40vh;
   left: 0;
+  padding-top: 20vh;
   width: 100%;
   height: 60px;
+}
+
+
+#pictureOfMe {
+  padding-top: 1vmin;
+  height: 100% auto;
+  width: 100%;
+}
+
+#paragraphAboutContainer {
+  background-color: #687758;
+  color: white;
+  font-size: 10px;
+}
+
+#paragraphsAbout {
+  font-size: 16px;
+}
+
+#aboutJumboContainer {
+
+}
+
+#aboutjumboBigH {
+  padding-top: 3vmin;
+  padding-left: 10px;
+  font-size: 50px;
+  font-weight: 500;
+
+}
+
+#resumeButton {
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  #pictureOfMe {
+    padding-right: 30px;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  #paragraphsAbout {
+    font-size: 14px;
+  }
+
+  #aboutjumboBigH {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+
+  #pictureOfMe {
+    padding-right: 25px;
+    height: 230px;
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+  #paragraphsAbout {
+    font-size: 16px;
+  }
+
+  #aboutjumboBigH {
+    margin-left: 2px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .aboutfooterContainer {
+   font-size: 12px;
+  }
 }

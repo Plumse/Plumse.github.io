@@ -37,31 +37,14 @@ class CustomNavbar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href={process.env.PUBLIC_URL + '/'}>Home</NavLink>
+                <NavLink className="homeNavbar" href={process.env.PUBLIC_URL + '/'}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href={process.env.PUBLIC_URL + '/About'}>About</NavLink>
+                <NavLink className="aboutNavbar" href={process.env.PUBLIC_URL + '/About'}>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href={process.env.PUBLIC_URL + '/Contact'}>Contact</NavLink>
+                <NavLink className="contactNavbar" href={process.env.PUBLIC_URL + '/Contact'}>Contact</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Settings
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Navbar>

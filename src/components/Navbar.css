@@ -1,10 +1,43 @@
 #navbartext {
   color: #333;
-  font-weight: 400;
-  margin-left: 2vmin;
+  font-weight: 600;
+  margin-left: 40vmin;
+  font-size: 25px;
+}
+
+#navbartext:hover {
+  color: #838f76;
+}
+
+.ml-auto {
+  margin-right: 45vmin;
 }
 
 a {
   color: #aaa;
-  font-weight: 200;
+  font-weight: 500;
+}
+
+.homeNavbar:hover {
+  background-color: #838f76; /* Green */
+  color: white;
+}
+
+.aboutNavbar:hover {
+  background-color: #838f76; /* Green */
+  color: white;
+}
+
+.contactNavbar:hover {
+  background-color: #838f76; /* Green */
+  color: white;
+}
+
+@media (max-width: 767px) {
+  #navbartext {
+    color: #333;
+    font-weight: 600;
+    margin-left: 2vmin;
+    font-size: 25px;
+  }
 }
